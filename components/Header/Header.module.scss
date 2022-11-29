@@ -1,0 +1,11 @@
+@import 'styles/variables';
+
+.wrapper {
+  padding: 20px;
+  background-color: $color-primary;
+  color: $color-light;
+
+  @media (max-width: $width-m) {
+    background-color: $color-dark;
+  }
+}
