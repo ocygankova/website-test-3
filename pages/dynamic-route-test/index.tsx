@@ -26,7 +26,7 @@ export default Dynamic;
 
 export const getStaticProps = async () => {
   try {
-    const res = await fetch(`${API_HOST}/test`);
+    const res = await fetch(`${process.env.API_HOST}/test`);
     const data: ITestItem[] = await res.json();
 
     if (!data || !data.length) {
